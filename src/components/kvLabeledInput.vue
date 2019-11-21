@@ -20,6 +20,7 @@
             type: String,
             id: String,
             required: Boolean
+            // TODO: Model binding?
         }
     }
 </script>

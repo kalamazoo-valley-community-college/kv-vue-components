@@ -1,17 +1,13 @@
 <template>
-    <div id="app">
-        <kv-button></kv-button>
-    </div>
+    <div id="app"></div>
 </template>
 
 <script>
     // TODO: Clean up public folder?
-    import kvButton from "./components/kvButton";
+    require('./components/kvButton');
 
     export default {
         name: 'app',
-        components: {
-            kvButton,
-        }
+        components: {}
     }
 </script>

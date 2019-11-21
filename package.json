@@ -1,11 +1,8 @@
 {
   "name": "kv-vue-components",
   "version": "1.0.0",
-  "description": "A set of components for internal applications in Vue based on Kalamazoo Valley design guidelines with Tailwind.",
-  "main": "index.js",
-  "scripts": {
-    "test": "kv-vue test"
-  },
+  "main": "./dist/kv-vue-components.common.js",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kalamazoo-valley-community-college/kv-vue-components.git"
@@ -22,5 +19,46 @@
   "bugs": {
     "url": "https://github.com/kalamazoo-valley-community-college/kv-vue-components/issues"
   },
-  "homepage": "https://github.com/kalamazoo-valley-community-college/kv-vue-components#readme"
+  "homepage": "https://github.com/kalamazoo-valley-community-college/kv-vue-components#readme",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.3.2",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-plugin-eslint": "^4.0.0",
+    "@vue/cli-service": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }

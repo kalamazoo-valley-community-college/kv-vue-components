@@ -1,1 +1,7 @@
-console.log('Not exactly sure what goes here.');
+import KVButton from "./src/KVButton";
+
+export default {
+    components: {
+        KVButton
+    }
+}

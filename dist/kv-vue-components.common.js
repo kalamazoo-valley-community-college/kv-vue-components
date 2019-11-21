@@ -82,7 +82,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "fb15");
+/******/ 	return __webpack_require__(__webpack_require__.s = "fae3");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -130,7 +130,7 @@ module.exports =
 
 /***/ }),
 
-/***/ "fb15":
+/***/ "fae3":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -299,13 +299,67 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var kvButton = (component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"591d187e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=template&id=757cbba0&
+var kvLabeledInputvue_type_template_id_757cbba0_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative w-48"},[_c('label',{staticClass:"text-xs font-thin mb-1 absolute top-0 left-0 ml-3 mt-2 pointer-events-none",attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]),_c('input',{staticClass:"px-3 pb-2 pt-6\n                mb-4\n                border border-gray-500 focus:border-blue-800\n                rounded\n                transition\n                outline-none\n                focus:shadow-outline\n                w-full",attrs:{"type":_vm.type,"id":_vm.id,"name":_vm.id,"required":_vm.required}})])}
+var kvLabeledInputvue_type_template_id_757cbba0_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=template&id=757cbba0&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var kvLabeledInputvue_type_script_lang_js_ = ({
+  props: {
+    label: String,
+    type: String,
+    id: String,
+    required: Boolean
+  }
+});
+// CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_kvLabeledInputvue_type_script_lang_js_ = (kvLabeledInputvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/kvLabeledInput.vue
+
+
+
+
+
+/* normalize component */
+
+var kvLabeledInput_component = normalizeComponent(
+  components_kvLabeledInputvue_type_script_lang_js_,
+  kvLabeledInputvue_type_template_id_757cbba0_render,
+  kvLabeledInputvue_type_template_id_757cbba0_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var kvLabeledInput = (kvLabeledInput_component.exports);
 // CONCATENATED MODULE: ./src/main.js
 
-/* harmony default export */ var main = (kvButton);
-// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
-/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (main);
+// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib-no-default.js
+/* concated harmony reexport kvButton */__webpack_require__.d(__webpack_exports__, "kvButton", function() { return kvButton; });
+/* concated harmony reexport kvLabeledInput */__webpack_require__.d(__webpack_exports__, "kvLabeledInput", function() { return kvLabeledInput; });
+
 
 
 

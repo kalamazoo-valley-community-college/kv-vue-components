@@ -1,3 +1,4 @@
 import kvButton from "./components/kvButton";
+import kvLabeledInput from "./components/kvLabeledInput";
 
-export default kvButton;
+export {kvButton, kvLabeledInput};

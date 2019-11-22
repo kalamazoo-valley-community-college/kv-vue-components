@@ -50,6 +50,7 @@
                     'px-3',
                     'pb-2',
                     'pt-6',
+                    'bg-white',
                     'border',
                     'border-gray-500',
                     'focus:border-blue-800',

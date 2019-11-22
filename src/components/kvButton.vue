@@ -4,7 +4,7 @@
                     rounded
                     cursor-pointer
                     text-blue-800 hover:text-white focus:text-white hover:text-shadow focus:text-shadow
-                    bg-red-200 hover:bg-blue-700 focus:bg-blue-700
+                    bg-blue-200 hover:bg-blue-700 focus:bg-blue-700
                     border border-gray-500 hover:border-blue-800 focus:border-blue-800
                     focus:shadow-outline
                     font-medium"

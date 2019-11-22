@@ -9,7 +9,10 @@
                     transition
                     outline-none
                     focus:shadow-outline
-                    w-full" :required="required">
+                    w-full"
+               v-model="model"
+               @keyup="updateParentModel"
+               :required="required">
     </div>
 </template>
 
@@ -19,8 +22,13 @@
             label: String,
             type: String,
             id: String,
-            required: Boolean
-            // TODO: Model binding?
+            required: Boolean,
+            model: null
+        },
+        methods: {
+            updateParentModel() {
+                this.$emit('update:model', this.model);
+            }
         }
     }
 </script>

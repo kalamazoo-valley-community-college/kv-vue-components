@@ -19,7 +19,7 @@
             <option v-for="(option, index) in options"
                     :key="index"
                     :value="option.value">
-                {{ option.text.trim() }}
+                {{ option.text }}
             </option>
         </select>
     </div>
@@ -47,6 +47,7 @@
             return {
                 input: null,
                 classes: [
+                    'appearance-none',
                     'px-3',
                     'pb-2',
                     'pt-6',

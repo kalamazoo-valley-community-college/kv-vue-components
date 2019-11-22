@@ -1378,12 +1378,12 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var kvButton = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"740c6b12-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=template&id=96ee244c&
-var kvLabeledInputvue_type_template_id_96ee244c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative"},[_c('label',{staticClass:"absolute top-0 left-0\n           mb-1 ml-3 mt-2\n           text-xs font-thin\n           pointer-events-none",attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]),((_vm.type)==='checkbox'&&(_vm.type === 'text' || _vm.type === 'search'))?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id,"required":_vm.required,"type":"checkbox"},domProps:{"checked":Array.isArray(_vm.input)?_vm._i(_vm.input,null)>-1:(_vm.input)},on:{"keyup":_vm.updateParentModel,"change":function($event){var $$a=_vm.input,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.input=$$a.concat([$$v]))}else{$$i>-1&&(_vm.input=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.input=$$c}}}}):((_vm.type)==='radio'&&(_vm.type === 'text' || _vm.type === 'search'))?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id,"required":_vm.required,"type":"radio"},domProps:{"checked":_vm._q(_vm.input,null)},on:{"keyup":_vm.updateParentModel,"change":function($event){_vm.input=null}}}):(_vm.type === 'text' || _vm.type === 'search')?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id,"required":_vm.required,"type":_vm.type},domProps:{"value":(_vm.input)},on:{"keyup":_vm.updateParentModel,"input":function($event){if($event.target.composing){ return; }_vm.input=$event.target.value}}}):_vm._e(),(_vm.type === 'select')?_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id},on:{"change":[function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.input=$event.target.multiple ? $$selectedVal : $$selectedVal[0]},_vm.updateParentModel]}},_vm._l((_vm.options),function(option,index){return _c('option',{key:index,domProps:{"value":option.value}},[_vm._v(" "+_vm._s(option.text.trim())+" ")])}),0):_vm._e()])}
-var kvLabeledInputvue_type_template_id_96ee244c_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"740c6b12-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=template&id=52096d78&
+var kvLabeledInputvue_type_template_id_52096d78_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative"},[_c('label',{staticClass:"absolute top-0 left-0\n           mb-1 ml-3 mt-2\n           text-xs font-thin\n           pointer-events-none",attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]),((_vm.type)==='checkbox'&&(_vm.type === 'text' || _vm.type === 'search'))?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id,"required":_vm.required,"type":"checkbox"},domProps:{"checked":Array.isArray(_vm.input)?_vm._i(_vm.input,null)>-1:(_vm.input)},on:{"keyup":_vm.updateParentModel,"change":function($event){var $$a=_vm.input,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.input=$$a.concat([$$v]))}else{$$i>-1&&(_vm.input=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.input=$$c}}}}):((_vm.type)==='radio'&&(_vm.type === 'text' || _vm.type === 'search'))?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id,"required":_vm.required,"type":"radio"},domProps:{"checked":_vm._q(_vm.input,null)},on:{"keyup":_vm.updateParentModel,"change":function($event){_vm.input=null}}}):(_vm.type === 'text' || _vm.type === 'search')?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id,"required":_vm.required,"type":_vm.type},domProps:{"value":(_vm.input)},on:{"keyup":_vm.updateParentModel,"input":function($event){if($event.target.composing){ return; }_vm.input=$event.target.value}}}):_vm._e(),(_vm.type === 'select')?_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id},on:{"change":[function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.input=$event.target.multiple ? $$selectedVal : $$selectedVal[0]},_vm.updateParentModel]}},_vm._l((_vm.options),function(option,index){return _c('option',{key:index,domProps:{"value":option.value}},[_vm._v(" "+_vm._s(option.text)+" ")])}),0):_vm._e()])}
+var kvLabeledInputvue_type_template_id_52096d78_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=template&id=96ee244c&
+// CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=template&id=52096d78&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.includes.js
 var es_array_includes = __webpack_require__("caad");
@@ -1437,7 +1437,7 @@ var es_array_includes = __webpack_require__("caad");
   data: function data() {
     return {
       input: null,
-      classes: ['px-3', 'pb-2', 'pt-6', 'bg-white', 'border', 'border-gray-500', 'focus:border-blue-800', 'rounded', 'outline-none', 'focus:shadow-outline']
+      classes: ['appearance-none', 'px-3', 'pb-2', 'pt-6', 'bg-white', 'border', 'border-gray-500', 'focus:border-blue-800', 'rounded', 'outline-none', 'focus:shadow-outline']
     };
   },
   methods: {
@@ -1458,8 +1458,8 @@ var es_array_includes = __webpack_require__("caad");
 
 var kvLabeledInput_component = normalizeComponent(
   components_kvLabeledInputvue_type_script_lang_js_,
-  kvLabeledInputvue_type_template_id_96ee244c_render,
-  kvLabeledInputvue_type_template_id_96ee244c_staticRenderFns,
+  kvLabeledInputvue_type_template_id_52096d78_render,
+  kvLabeledInputvue_type_template_id_52096d78_staticRenderFns,
   false,
   null,
   null,

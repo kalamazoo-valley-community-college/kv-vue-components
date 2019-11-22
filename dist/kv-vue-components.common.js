@@ -1374,9 +1374,12 @@ var kvLabeledInputvue_type_template_id_17be9a3a_render = function () {var _vm=th
 var kvLabeledInputvue_type_template_id_17be9a3a_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=template&id=17be9a3a&
+// CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=template&id=4459e9d8&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=script&lang=js&
+//
+//
+//
 //
 //
 //
@@ -1397,8 +1400,18 @@ var kvLabeledInputvue_type_template_id_17be9a3a_staticRenderFns = []
     label: String,
     type: String,
     id: String,
-    required: Boolean // TODO: Model binding?
-
+    model: String,
+    required: Boolean
+  },
+  data: function data() {
+    return {
+      input: null
+    };
+  },
+  methods: {
+    updateParentModel: function updateParentModel() {
+      this.$emit('update:model', this.input);
+    }
   }
 });
 // CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=script&lang=js&
@@ -1413,8 +1426,8 @@ var kvLabeledInputvue_type_template_id_17be9a3a_staticRenderFns = []
 
 var kvLabeledInput_component = normalizeComponent(
   components_kvLabeledInputvue_type_script_lang_js_,
-  kvLabeledInputvue_type_template_id_17be9a3a_render,
-  kvLabeledInputvue_type_template_id_17be9a3a_staticRenderFns,
+  kvLabeledInputvue_type_template_id_4459e9d8_render,
+  kvLabeledInputvue_type_template_id_4459e9d8_staticRenderFns,
   false,
   null,
   null,

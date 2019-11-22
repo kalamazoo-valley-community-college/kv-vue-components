@@ -18,9 +18,7 @@
                 @change="updateParentModel">
             <option v-for="(option, index) in options"
                     :key="index"
-                    :value="option.value">
-                {{ option.text }}
-            </option>
+                    :value="option.value">{{ option.text }}</option>
         </select>
     </div>
 </template>

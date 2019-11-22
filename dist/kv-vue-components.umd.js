@@ -162,12 +162,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"591d187e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvButton.vue?vue&type=template&id=50b44ff1&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"leading-none\n                px-4 py-3\n                rounded\n                cursor-pointer\n                transition\n                text-sm text-blue-800 hover:text-white focus:text-white hover:text-shadow focus:text-shadow\n                bg-gray-200 hover:bg-blue-700 focus:bg-blue-700\n                border border-gray-500 hover:border-blue-800 focus:border-blue-800\n                focus:shadow-outline\n                font-medium\n                w-full"},[_c('span',[_vm._v(_vm._s(_vm.text))])])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"591d187e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvButton.vue?vue&type=template&id=924f41da&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"leading-none\n                rounded\n                cursor-pointer\n                text-blue-800 hover:text-white focus:text-white hover:text-shadow focus:text-shadow\n                bg-gray-200 hover:bg-blue-700 focus:bg-blue-700\n                border border-gray-500 hover:border-blue-800 focus:border-blue-800\n                focus:shadow-outline\n                font-medium",class:_vm.classes,attrs:{"type":_vm.type}},[_c('span',[_vm._v(_vm._s(_vm.text))])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/kvButton.vue?vue&type=template&id=50b44ff1&
+// CONCATENATED MODULE: ./src/components/kvButton.vue?vue&type=template&id=924f41da&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvButton.vue?vue&type=script&lang=js&
 //
@@ -185,10 +185,40 @@ var staticRenderFns = []
 //
 //
 //
-//
 /* harmony default export */ var kvButtonvue_type_script_lang_js_ = ({
+  data: function data() {
+    return {
+      classes: null
+    };
+  },
   props: {
-    text: String
+    type: String,
+    text: String,
+    size: String
+  },
+  methods: {
+    getSizeClasses: function getSizeClasses(size) {
+      if (size === 'tiny') {
+        return ['px-2', 'py-1', 'text-xs'];
+      } else if (size === 'small') {
+        return ['px-3', 'py-2', 'text-sm'];
+      } else if (size === 'large') {
+        return ['px-5', 'py-4', 'text-lg'];
+      } else if (size === 'huge') {
+        return ['px-6', 'py-5', 'text-xl'];
+      } else {
+        // If no class size is specified, default to the base styling.
+        return ['px-4', 'py-3', 'text-base'];
+      }
+    },
+    applyClasses: function applyClasses() {
+      if (this.size) {
+        this.classes = this.getSizeClasses(this.size);
+      }
+    }
+  },
+  mounted: function mounted() {
+    this.applyClasses();
   }
 });
 // CONCATENATED MODULE: ./src/components/kvButton.vue?vue&type=script&lang=js&
@@ -308,12 +338,12 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var kvButton = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"591d187e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=template&id=757cbba0&
-var kvLabeledInputvue_type_template_id_757cbba0_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative w-48"},[_c('label',{staticClass:"text-xs font-thin mb-1 absolute top-0 left-0 ml-3 mt-2 pointer-events-none",attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]),_c('input',{staticClass:"px-3 pb-2 pt-6\n                mb-4\n                border border-gray-500 focus:border-blue-800\n                rounded\n                transition\n                outline-none\n                focus:shadow-outline\n                w-full",attrs:{"type":_vm.type,"id":_vm.id,"name":_vm.id,"required":_vm.required}})])}
-var kvLabeledInputvue_type_template_id_757cbba0_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"591d187e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=template&id=17be9a3a&
+var kvLabeledInputvue_type_template_id_17be9a3a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative w-48"},[_c('label',{staticClass:"text-xs font-thin mb-1 absolute top-0 left-0 ml-3 mt-2 pointer-events-none",attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]),_c('input',{staticClass:"px-3 pb-2 pt-6\n                mb-4\n                border border-gray-500 focus:border-blue-800\n                rounded\n                transition\n                outline-none\n                focus:shadow-outline\n                w-full",attrs:{"type":_vm.type,"id":_vm.id,"name":_vm.id,"required":_vm.required}})])}
+var kvLabeledInputvue_type_template_id_17be9a3a_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=template&id=757cbba0&
+// CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=template&id=17be9a3a&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=script&lang=js&
 //
@@ -336,7 +366,8 @@ var kvLabeledInputvue_type_template_id_757cbba0_staticRenderFns = []
     label: String,
     type: String,
     id: String,
-    required: Boolean
+    required: Boolean // TODO: Model binding?
+
   }
 });
 // CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=script&lang=js&
@@ -351,8 +382,8 @@ var kvLabeledInputvue_type_template_id_757cbba0_staticRenderFns = []
 
 var kvLabeledInput_component = normalizeComponent(
   components_kvLabeledInputvue_type_script_lang_js_,
-  kvLabeledInputvue_type_template_id_757cbba0_render,
-  kvLabeledInputvue_type_template_id_757cbba0_staticRenderFns,
+  kvLabeledInputvue_type_template_id_17be9a3a_render,
+  kvLabeledInputvue_type_template_id_17be9a3a_staticRenderFns,
   false,
   null,
   null,

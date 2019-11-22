@@ -1,18 +1,27 @@
 <template>
-    <div class="relative w-48">
+    <div class="relative">
         <label :for="id"
                class="absolute top-0 left-0
                mb-1 ml-3 mt-2
                text-xs font-thin
                pointer-events-none">{{ label }}</label>
-        <input :type="type" :id="id" :name="id" class="px-3 pb-2 pt-6
-                    border border-gray-500 focus:border-blue-800
-                    rounded
-                    outline-none
-                    focus:shadow-outline"
+        <input v-if="type === 'text' || type === 'search'"
+               :type="type" :id="id" :name="id"
+               :class="classes"
                v-model="input"
                :required="required"
                @keyup="updateParentModel">
+        <select v-if="type === 'select'"
+                :id="id" :name="id"
+                :class="classes"
+                v-model="input"
+                @change="updateParentModel">
+            <option v-for="(option, index) in options"
+                    :key="index"
+                    :value="option.value">
+                {{ option.text }}
+            </option>
+        </select>
     </div>
 </template>
 
@@ -21,14 +30,33 @@
     export default {
         props: {
             label: String,
-            type: String,
+            type: {
+                type: String,
+                default: 'text',
+                validation: value => {
+                    const validTypes = ['text', 'search', 'select'];
+                    return validTypes.includes(value);
+                }
+            },
             id: String,
             model: String,
             required: Boolean,
+            options: Object,
         },
         data() {
             return {
-                input: null
+                input: null,
+                classes: [
+                    'px-3',
+                    'pb-2',
+                    'pt-6',
+                    'border',
+                    'border-gray-500',
+                    'focus:border-blue-800',
+                    'rounded',
+                    'outline-none',
+                    'focus:shadow-outline'
+                ]
             }
         },
         methods: {

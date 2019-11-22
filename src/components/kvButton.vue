@@ -39,15 +39,10 @@
                     // If no class size is specified, default to the base styling.
                     return ['px-4', 'py-3', 'text-base'];
                 }
-            },
-            applyClasses() {
-                if (this.size) {
-                    this.classes = this.getSizeClasses(this.size);
-                }
             }
         },
         mounted() {
-            this.applyClasses();
+            this.classes = this.getSizeClasses(this.size);
         }
     }
 </script>

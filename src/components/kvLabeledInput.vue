@@ -17,6 +17,7 @@
 </template>
 
 <script>
+    // TODO: Handle other input types like Select or Datalist.
     export default {
         props: {
             label: String,

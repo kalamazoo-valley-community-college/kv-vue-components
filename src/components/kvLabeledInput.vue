@@ -11,8 +11,8 @@
                     outline-none
                     focus:shadow-outline"
                v-model="input"
-               @keyup="updateParentModel"
-               :required="required">
+               :required="required"
+               @keyup="updateParentModel">
     </div>
 </template>
 
@@ -22,8 +22,8 @@
             label: String,
             type: String,
             id: String,
+            model: String,
             required: Boolean,
-            model: null
         },
         data() {
             return {

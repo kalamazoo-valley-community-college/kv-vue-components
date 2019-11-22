@@ -324,12 +324,12 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var kvButton = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"591d187e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=template&id=4d95e27e&
-var kvLabeledInputvue_type_template_id_4d95e27e_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative w-48"},[_c('label',{staticClass:"text-xs font-thin mb-1 absolute top-0 left-0 ml-3 mt-2 pointer-events-none",attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]),((_vm.type)==='checkbox')?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.model),expression:"model"}],staticClass:"px-3 pb-2 pt-6\n                mb-4\n                border border-gray-500 focus:border-blue-800\n                rounded\n                transition\n                outline-none\n                focus:shadow-outline\n                w-full",attrs:{"id":_vm.id,"name":_vm.id,"required":_vm.required,"type":"checkbox"},domProps:{"checked":Array.isArray(_vm.model)?_vm._i(_vm.model,null)>-1:(_vm.model)},on:{"keyup":_vm.updateParentModel,"change":function($event){var $$a=_vm.model,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.model=$$a.concat([$$v]))}else{$$i>-1&&(_vm.model=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.model=$$c}}}}):((_vm.type)==='radio')?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.model),expression:"model"}],staticClass:"px-3 pb-2 pt-6\n                mb-4\n                border border-gray-500 focus:border-blue-800\n                rounded\n                transition\n                outline-none\n                focus:shadow-outline\n                w-full",attrs:{"id":_vm.id,"name":_vm.id,"required":_vm.required,"type":"radio"},domProps:{"checked":_vm._q(_vm.model,null)},on:{"keyup":_vm.updateParentModel,"change":function($event){_vm.model=null}}}):_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.model),expression:"model"}],staticClass:"px-3 pb-2 pt-6\n                mb-4\n                border border-gray-500 focus:border-blue-800\n                rounded\n                transition\n                outline-none\n                focus:shadow-outline\n                w-full",attrs:{"id":_vm.id,"name":_vm.id,"required":_vm.required,"type":_vm.type},domProps:{"value":(_vm.model)},on:{"keyup":_vm.updateParentModel,"input":function($event){if($event.target.composing){ return; }_vm.model=$event.target.value}}})])}
-var kvLabeledInputvue_type_template_id_4d95e27e_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"591d187e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=template&id=2bfcd374&
+var kvLabeledInputvue_type_template_id_2bfcd374_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative w-48"},[_c('label',{staticClass:"text-xs font-thin mb-1 absolute top-0 left-0 ml-3 mt-2 pointer-events-none",attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]),((_vm.type)==='checkbox')?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],staticClass:"px-3 pb-2 pt-6\n                mb-4\n                border border-gray-500 focus:border-blue-800\n                rounded\n                transition\n                outline-none\n                focus:shadow-outline\n                w-full",attrs:{"id":_vm.id,"name":_vm.id,"required":_vm.required,"type":"checkbox"},domProps:{"checked":Array.isArray(_vm.input)?_vm._i(_vm.input,null)>-1:(_vm.input)},on:{"keyup":_vm.updateParentModel,"change":function($event){var $$a=_vm.input,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.input=$$a.concat([$$v]))}else{$$i>-1&&(_vm.input=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.input=$$c}}}}):((_vm.type)==='radio')?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],staticClass:"px-3 pb-2 pt-6\n                mb-4\n                border border-gray-500 focus:border-blue-800\n                rounded\n                transition\n                outline-none\n                focus:shadow-outline\n                w-full",attrs:{"id":_vm.id,"name":_vm.id,"required":_vm.required,"type":"radio"},domProps:{"checked":_vm._q(_vm.input,null)},on:{"keyup":_vm.updateParentModel,"change":function($event){_vm.input=null}}}):_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],staticClass:"px-3 pb-2 pt-6\n                mb-4\n                border border-gray-500 focus:border-blue-800\n                rounded\n                transition\n                outline-none\n                focus:shadow-outline\n                w-full",attrs:{"id":_vm.id,"name":_vm.id,"required":_vm.required,"type":_vm.type},domProps:{"value":(_vm.input)},on:{"keyup":_vm.updateParentModel,"input":function($event){if($event.target.composing){ return; }_vm.input=$event.target.value}}})])}
+var kvLabeledInputvue_type_template_id_2bfcd374_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=template&id=4d95e27e&
+// CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=template&id=2bfcd374&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=script&lang=js&
 //
@@ -358,9 +358,14 @@ var kvLabeledInputvue_type_template_id_4d95e27e_staticRenderFns = []
     required: Boolean,
     model: null
   },
+  data: function data() {
+    return {
+      input: null
+    };
+  },
   methods: {
     updateParentModel: function updateParentModel() {
-      this.$emit('update:model', this.model);
+      this.$emit('update:model', this.input);
     }
   }
 });
@@ -376,8 +381,8 @@ var kvLabeledInputvue_type_template_id_4d95e27e_staticRenderFns = []
 
 var kvLabeledInput_component = normalizeComponent(
   components_kvLabeledInputvue_type_script_lang_js_,
-  kvLabeledInputvue_type_template_id_4d95e27e_render,
-  kvLabeledInputvue_type_template_id_4d95e27e_staticRenderFns,
+  kvLabeledInputvue_type_template_id_2bfcd374_render,
+  kvLabeledInputvue_type_template_id_2bfcd374_staticRenderFns,
   false,
   null,
   null,

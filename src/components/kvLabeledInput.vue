@@ -10,7 +10,7 @@
                     outline-none
                     focus:shadow-outline
                     w-full"
-               v-model="model"
+               v-model="input"
                @keyup="updateParentModel"
                :required="required">
     </div>
@@ -25,9 +25,14 @@
             required: Boolean,
             model: null
         },
+        data() {
+            return {
+                input: null
+            }
+        },
         methods: {
             updateParentModel() {
-                this.$emit('update:model', this.model);
+                this.$emit('update:model', this.input);
             }
         }
     }

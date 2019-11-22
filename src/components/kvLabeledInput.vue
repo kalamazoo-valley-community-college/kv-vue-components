@@ -16,11 +16,7 @@
                 :class="classes"
                 v-model="input"
                 @change="updateParentModel">
-            <option v-for="(option, index) in options"
-                    :key="index"
-                    :value="option.value">
-                {{ option.text }}
-            </option>
+            <slot/>
         </select>
     </div>
 </template>

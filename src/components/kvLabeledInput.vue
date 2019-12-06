@@ -5,9 +5,10 @@
                mb-1 ml-3 mt-2
                text-xs font-thin
                pointer-events-none">{{ label }}</label>
-        <input v-if="type === 'text' || type === 'search'"
+        <input v-if="type === 'text' || type === 'search' || type === 'datalist'"
                :type="type" :id="id" :name="id"
                :class="classes"
+               :list="list_id"
                v-model="input"
                :required="required"
                @keyup="updateParentModel">
@@ -16,13 +17,16 @@
                 :class="classes"
                 v-model="input"
                 @change="updateParentModel">
+            <!-- Allow a slot for options directly if this is a select input. -->
             <slot/>
         </select>
+        <!-- Allow a datalist slot if this is a datalist input. -->
+        <slot v-if="type === 'datalist'"/>
     </div>
 </template>
 
 <script>
-    // TODO: Handle other input types like Select or Datalist.
+    // TODO: Datalist focus handling? When re-focusing do we null the value?
     export default {
         props: {
             label: String,
@@ -30,14 +34,14 @@
                 type: String,
                 default: 'text',
                 validation: value => {
-                    const validTypes = ['text', 'search', 'select'];
+                    const validTypes = ['text', 'search', 'select', 'datalist'];
                     return validTypes.includes(value);
                 }
             },
             id: String,
             model: String,
             required: Boolean,
-            options: Object,
+            list_id: String
         },
         data() {
             return {

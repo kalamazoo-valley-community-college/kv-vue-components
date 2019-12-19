@@ -57,7 +57,8 @@
                     'focus:border-blue-800',
                     'rounded',
                     'outline-none',
-                    'focus:shadow-outline'
+                    'focus:shadow-outline',
+                    'w-full'
                 ]
             }
         },

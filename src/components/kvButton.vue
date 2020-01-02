@@ -4,9 +4,9 @@
                     rounded
                     cursor-pointer
                     shadow
-                    text-shadow
                     hover:shadow-outline focus:shadow-outline
                     font-medium"
+            style="text-shadow: 0 0 0.625rem black;"
             :class="[buttonSize, buttonColor]">
         <span>{{ text }}</span>
     </button>
@@ -63,9 +63,3 @@
         }
     }
 </script>
-
-<style scoped>
-    .text-shadow {
-        text-shadow: 0 0 0.625rem black;
-    }
-</style>

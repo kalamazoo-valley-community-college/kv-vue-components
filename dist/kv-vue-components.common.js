@@ -1236,12 +1236,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47986298-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvButton.vue?vue&type=template&id=3ab9081e&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47986298-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvButton.vue?vue&type=template&id=1c710620&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"leading-none\n                rounded\n                cursor-pointer\n                shadow\n                hover:shadow-outline focus:shadow-outline\n                font-medium",class:[_vm.buttonSize, _vm.buttonColor],attrs:{"type":_vm.type}},[_c('span',[_vm._v(_vm._s(_vm.text))])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/kvButton.vue?vue&type=template&id=3ab9081e&
+// CONCATENATED MODULE: ./src/components/kvButton.vue?vue&type=template&id=1c710620&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvButton.vue?vue&type=script&lang=js&
 //
@@ -1286,13 +1286,13 @@ var staticRenderFns = []
     buttonColor: function buttonColor() {
       switch (this.color) {
         case 'red':
-          return ['text-white', 'bg-red-800', 'hover:bg-red-900', 'focus:bg-red-900'];
+          return ['text-white', 'bg-red-700', 'hover:bg-red-800', 'focus:bg-red-800'];
 
         case 'green':
-          return ['text-white', 'bg-green-800', 'hover:bg-green-900', 'focus:bg-green-900'];
+          return ['text-white', 'bg-green-700', 'hover:bg-green-800', 'focus:bg-green-800'];
 
         default:
-          return ['text-white', 'bg-blue-800', 'hover:bg-blue-900', 'focus:bg-blue-900'];
+          return ['text-white', 'bg-blue-700', 'hover:bg-blue-800', 'focus:bg-blue-800'];
       }
     }
   }

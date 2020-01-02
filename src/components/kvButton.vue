@@ -39,23 +39,23 @@
                     case 'red':
                         return [
                             'text-white',
-                            'bg-red-800',
-                            'hover:bg-red-900',
-                            'focus:bg-red-900'
+                            'bg-red-700',
+                            'hover:bg-red-800',
+                            'focus:bg-red-800'
                         ];
                     case 'green':
                         return [
                             'text-white',
-                            'bg-green-800',
-                            'hover:bg-green-900',
-                            'focus:bg-green-900'
+                            'bg-green-700',
+                            'hover:bg-green-800',
+                            'focus:bg-green-800'
                         ];
                     default:
                         return [
                             'text-white',
-                            'bg-blue-800',
-                            'hover:bg-blue-900',
-                            'focus:bg-blue-900'
+                            'bg-blue-700',
+                            'hover:bg-blue-800',
+                            'focus:bg-blue-800'
                         ];
                 }
             }

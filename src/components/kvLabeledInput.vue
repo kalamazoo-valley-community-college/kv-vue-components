@@ -52,6 +52,8 @@
                     'pb-2',
                     'pt-6',
                     'bg-white',
+                    'border',
+                    'border-gray-400',
                     'shadow',
                     'rounded',
                     'hover:shadow-outline',

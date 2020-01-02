@@ -3,10 +3,10 @@
             class="leading-none
                     rounded
                     cursor-pointer
-                    text-blue-800 hover:text-white focus:text-white hover:text-shadow focus:text-shadow
-                    bg-gray-200 hover:bg-blue-700 focus:bg-blue-700
-                    border border-gray-500 hover:border-blue-800 focus:border-blue-800
-                    focus:shadow-outline
+                    text-blue-800 hover:text-white focus:text-white
+                    bg-white hover:bg-blue-700 focus:bg-blue-700
+                    shadow
+                    hover:shadow-outline focus:shadow-outline
                     font-medium"
             :class="classes">
         <span>{{ text }}</span>

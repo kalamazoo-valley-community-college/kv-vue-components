@@ -3,7 +3,7 @@
         <label :for="id"
                class="absolute top-0 left-0
                mb-1 ml-3 mt-2
-               text-gray-700
+               text-gray-800
                text-xs font-thin
                pointer-events-none">{{ label }}</label>
         <input v-if="type === 'text' || type === 'search' || type === 'datalist'"
@@ -53,7 +53,7 @@
                     'pt-6',
                     'bg-white',
                     'border',
-                    'border-gray-700',
+                    'border-gray-500',
                     'hover:border-blue-700',
                     'focus:border-blue-700',
                     'shadow',

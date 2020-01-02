@@ -4,6 +4,7 @@
                     rounded
                     cursor-pointer
                     shadow
+                    text-shadow
                     hover:shadow-outline focus:shadow-outline
                     font-medium"
             :class="[buttonSize, buttonColor]">
@@ -62,3 +63,9 @@
         }
     }
 </script>
+
+<style scoped>
+    .text-shadow {
+        text-shadow: 0 0 0.625rem black;
+    }
+</style>

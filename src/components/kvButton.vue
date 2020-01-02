@@ -3,13 +3,11 @@
             class="leading-none
                     rounded
                     cursor-pointer
-                    text-blue-800 hover:text-white focus:text-white
-                    border border-gray-500 hover:border-blue-800 focus:border-blue-800
                     bg-white hover:bg-blue-700 focus:bg-blue-700
                     shadow
                     hover:shadow-outline focus:shadow-outline
                     font-medium"
-            :class="buttonSize">
+            :class="[buttonSize, buttonColor]">
         <span>{{ text }}</span>
     </button>
 </template>
@@ -19,7 +17,8 @@
         props: {
             type: String,
             text: String,
-            size: String
+            size: String,
+            color: String
         },
         computed: {
             buttonSize() {
@@ -34,6 +33,37 @@
                         return ['px-6', 'py-5', 'text-xl'];
                     default:
                         return ['px-4', 'py-3', 'text-base'];
+                }
+            },
+            buttonColor() {
+                switch (this.color) {
+                    case 'red':
+                        return [
+                            'text-red-800',
+                            'hover:text-white',
+                            'focus:text-white',
+                            'border border-gray-500',
+                            'hover:border-red-800',
+                            'focus:border-red-800'
+                        ];
+                    case 'green':
+                        return [
+                            'text-green-800',
+                            'hover:text-white',
+                            'focus:text-white',
+                            'border border-gray-500',
+                            'hover:border-green-800',
+                            'focus:border-green-800'
+                        ];
+                    default:
+                        return [
+                            'text-blue-800',
+                            'hover:text-white',
+                            'focus:text-white',
+                            'border border-gray-500',
+                            'hover:border-blue-800',
+                            'focus:border-blue-800'
+                        ];
                 }
             }
         }

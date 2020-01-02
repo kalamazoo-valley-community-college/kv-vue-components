@@ -52,10 +52,10 @@
                     'pb-2',
                     'pt-6',
                     'bg-white',
-                    'border',
-                    'border-gray-500',
-                    'focus:border-blue-800',
+                    'hover:bg-blue-100',
+                    'shadow',
                     'rounded',
+                    'focus:shadow-outline',
                     'outline-none',
                     'focus:shadow-outline',
                     'w-full'

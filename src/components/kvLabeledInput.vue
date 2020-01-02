@@ -3,6 +3,7 @@
         <label :for="id"
                class="absolute top-0 left-0
                mb-1 ml-3 mt-2
+               text-gray-700
                text-xs font-thin
                pointer-events-none">{{ label }}</label>
         <input v-if="type === 'text' || type === 'search' || type === 'datalist'"
@@ -34,8 +35,7 @@
                 type: String,
                 default: 'text',
                 validation: value => {
-                    const validTypes = ['text', 'search', 'select', 'datalist'];
-                    return validTypes.includes(value);
+                    return ['text', 'search', 'select', 'datalist'].includes(value);
                 }
             },
             id: String,
@@ -53,15 +53,13 @@
                     'pt-6',
                     'bg-white',
                     'border',
-                    'border-gray-500',
-                    'hover:border-blue-800',
-                    'focus:border-blue-800',
+                    'border-gray-700',
+                    'hover:border-blue-700',
+                    'focus:border-blue-700',
                     'shadow',
                     'rounded',
-                    'hover:shadow-outline',
                     'focus:shadow-outline',
                     'outline-none',
-                    'focus:shadow-outline',
                     'w-full'
                 ]
             }

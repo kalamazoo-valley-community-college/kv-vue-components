@@ -38,10 +38,10 @@
                 switch (this.color) {
                     case 'red':
                         return [
-                            'text-red-800',
+                            'text-red-700',
                             'hover:text-white',
                             'focus:text-white',
-                            'border border-red-500',
+                            'border border-red-700',
                             'hover:border-red-800',
                             'focus:border-red-800',
                             'bg-white',
@@ -50,10 +50,10 @@
                         ];
                     case 'green':
                         return [
-                            'text-green-800',
+                            'text-green-700',
                             'hover:text-white',
                             'focus:text-white',
-                            'border border-green-500',
+                            'border border-green-700',
                             'hover:border-green-800',
                             'focus:border-green-800',
                             'bg-white',
@@ -62,10 +62,10 @@
                         ];
                     default:
                         return [
-                            'text-blue-800',
+                            'text-blue-700',
                             'hover:text-white',
                             'focus:text-white',
-                            'border border-blue-500',
+                            'border border-blue-700',
                             'hover:border-blue-800',
                             'focus:border-blue-800',
                             'bg-white',

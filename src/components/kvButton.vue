@@ -3,7 +3,6 @@
             class="leading-none
                     rounded
                     cursor-pointer
-                    bg-white hover:bg-blue-700 focus:bg-blue-700
                     shadow
                     hover:shadow-outline focus:shadow-outline
                     font-medium"
@@ -42,27 +41,36 @@
                             'text-red-800',
                             'hover:text-white',
                             'focus:text-white',
-                            'border border-gray-500',
+                            'border border-red-500',
                             'hover:border-red-800',
-                            'focus:border-red-800'
+                            'focus:border-red-800',
+                            'bg-white',
+                            'hover:bg-red-700',
+                            'focus:bg-red-700'
                         ];
                     case 'green':
                         return [
                             'text-green-800',
                             'hover:text-white',
                             'focus:text-white',
-                            'border border-gray-500',
+                            'border border-green-500',
                             'hover:border-green-800',
-                            'focus:border-green-800'
+                            'focus:border-green-800',
+                            'bg-white',
+                            'hover:bg-green-700',
+                            'focus:bg-green-700'
                         ];
                     default:
                         return [
                             'text-blue-800',
                             'hover:text-white',
                             'focus:text-white',
-                            'border border-gray-500',
+                            'border border-blue-500',
                             'hover:border-blue-800',
-                            'focus:border-blue-800'
+                            'focus:border-blue-800',
+                            'bg-white',
+                            'hover:bg-blue-700',
+                            'focus:bg-blue-700'
                         ];
                 }
             }

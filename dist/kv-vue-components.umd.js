@@ -1589,7 +1589,81 @@ var kvHeading_component = normalizeComponent(
 )
 
 /* harmony default export */ var kvHeading = (kvHeading_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47986298-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLoader.vue?vue&type=template&id=0436d947&
+var kvLoadervue_type_template_id_0436d947_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"inline-flex justify-center items-center"},[_c('div',{ref:"icon",staticClass:"h-6 w-6\n            rounded-full\n            border-4 border-blue-700\n            mr-2",style:(_vm.iconStyling),attrs:{"aria-hidden":"true"}}),_c('div',[_vm._v(_vm._s(_vm.text))])])}
+var kvLoadervue_type_template_id_0436d947_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/kvLoader.vue?vue&type=template&id=0436d947&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLoader.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var kvLoadervue_type_script_lang_js_ = ({
+  props: {
+    text: String
+  },
+  data: function data() {
+    return {
+      iconStyling: {
+        borderTopColor: '#63b3ed',
+        filter: 'drop-shadow(0 0 0.0625rem #63b3ed)'
+      },
+      rotationValue: 0,
+      interval: null
+    };
+  },
+  methods: {
+    // Due to the necessity to import a separate stylesheet for styling exports, animations seem to need to be done in JavaScript.
+    // If you can find a workaround or modify the config to allow an easy CSS animation, please do!
+    // https://cli.vuejs.org/guide/css.html
+    animateIcon: function animateIcon() {
+      var nextRotationValue = this.rotationValue >= 360 ? this.rotationValue = 0 : this.rotationValue++;
+      this.$refs.icon.style.transform = 'rotate(' + nextRotationValue + 'deg)';
+    }
+  },
+  mounted: function mounted() {
+    this.interval = window.setInterval(this.animateIcon, 5);
+  },
+  beforeDestroy: function beforeDestroy() {
+    window.clearInterval(this.interval);
+  }
+});
+// CONCATENATED MODULE: ./src/components/kvLoader.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_kvLoadervue_type_script_lang_js_ = (kvLoadervue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/kvLoader.vue
+
+
+
+
+
+/* normalize component */
+
+var kvLoader_component = normalizeComponent(
+  components_kvLoadervue_type_script_lang_js_,
+  kvLoadervue_type_template_id_0436d947_render,
+  kvLoadervue_type_template_id_0436d947_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var kvLoader = (kvLoader_component.exports);
 // CONCATENATED MODULE: ./src/main.js
+
 
 
 
@@ -1598,6 +1672,7 @@ var kvHeading_component = normalizeComponent(
 /* concated harmony reexport kvButton */__webpack_require__.d(__webpack_exports__, "kvButton", function() { return kvButton; });
 /* concated harmony reexport kvLabeledInput */__webpack_require__.d(__webpack_exports__, "kvLabeledInput", function() { return kvLabeledInput; });
 /* concated harmony reexport kvHeading */__webpack_require__.d(__webpack_exports__, "kvHeading", function() { return kvHeading; });
+/* concated harmony reexport kvLoader */__webpack_require__.d(__webpack_exports__, "kvLoader", function() { return kvLoader; });
 
 
 

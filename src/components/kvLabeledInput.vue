@@ -43,10 +43,7 @@
             id: String,
             model: String,
             required: Boolean,
-            list_id: String,
-            styling: {
-                transition: 'all 0.25s ease'
-            }
+            list_id: String
         },
         data() {
             return {
@@ -68,7 +65,10 @@
                     'focus:shadow-outline',
                     'outline-none',
                     'w-full'
-                ]
+                ],
+                styling: {
+                    transition: 'all 0.25s ease'
+                }
             }
         },
         methods: {

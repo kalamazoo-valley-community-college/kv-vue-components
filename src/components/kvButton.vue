@@ -6,7 +6,7 @@
                     shadow
                     hover:shadow-outline focus:shadow-outline
                     font-medium"
-            style="text-shadow: 0 0 0.125rem black;"
+            :style="styling"
             :class="[buttonSize, buttonColor]">
         <span>{{ text }}</span>
     </button>
@@ -19,6 +19,14 @@
             text: String,
             size: String,
             color: String
+        },
+        data() {
+            return {
+                styling: {
+                    transition: 'all 0.25s ease',
+                    textShadow: '0 0 0.125rem black'
+                }
+            }
         },
         computed: {
             buttonSize() {

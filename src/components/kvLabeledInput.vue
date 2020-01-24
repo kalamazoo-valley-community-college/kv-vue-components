@@ -53,7 +53,7 @@
                     'px-3',
                     'pb-2',
                     'pt-6',
-                    'bg-indigo-100',
+                    'bg-white',
                     'hover:bg-white',
                     'focus:bg-white',
                     'border',

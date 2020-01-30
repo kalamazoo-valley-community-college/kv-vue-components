@@ -41,7 +41,7 @@
                 }
             },
             id: String,
-            model: String,
+            model: null,
             required: Boolean,
             list_id: String
         },

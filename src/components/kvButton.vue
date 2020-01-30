@@ -15,7 +15,12 @@
 <script>
     export default {
         props: {
-            type: String,
+            type: {
+                type: String,
+                validator(value) {
+                    return ["button", "submit", "reset"].includes(value)
+                }
+            },
             text: String,
             size: String,
             color: String

@@ -32,7 +32,7 @@
             buttonSize() {
                 switch (this.size) {
                     case 'tiny':
-                        return ['px-2', 'py-1', 'text-xs'];
+                        return ['px-2', 'py-2', 'text-xs'];
                     case 'small':
                         return ['px-3', 'py-2', 'text-sm'];
                     case 'large':

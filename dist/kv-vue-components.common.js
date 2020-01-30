@@ -1236,12 +1236,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47986298-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvButton.vue?vue&type=template&id=1fd3f2b9&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47986298-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvButton.vue?vue&type=template&id=3ec5c03a&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"leading-none\n                rounded\n                cursor-pointer\n                shadow\n                hover:shadow-outline focus:shadow-outline\n                font-medium",class:[_vm.buttonSize, _vm.buttonColor],style:(_vm.styling),attrs:{"type":_vm.type}},[_c('span',[_vm._v(_vm._s(_vm.text))])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/kvButton.vue?vue&type=template&id=1fd3f2b9&
+// CONCATENATED MODULE: ./src/components/kvButton.vue?vue&type=template&id=3ec5c03a&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvButton.vue?vue&type=script&lang=js&
 //
@@ -1277,7 +1277,7 @@ var staticRenderFns = []
     buttonSize: function buttonSize() {
       switch (this.size) {
         case 'tiny':
-          return ['px-2', 'py-1', 'text-xs'];
+          return ['px-2', 'py-2', 'text-xs'];
 
         case 'small':
           return ['px-3', 'py-2', 'text-sm'];
@@ -1666,7 +1666,106 @@ var kvLoader_component = normalizeComponent(
 )
 
 /* harmony default export */ var kvLoader = (kvLoader_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47986298-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvUpdateNotice.vue?vue&type=template&id=f6330f28&
+var kvUpdateNoticevue_type_template_id_f6330f28_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.update)?_c('div',{staticClass:"fixed bottom-0 right-0\n     flex flex-col justify-center items-center\n     text-sm text-center\n     mr-4 mb-4 p-4\n     bg-white\n     z-50\n     w-40\n     shadow-md\n     rounded-lg"},[_c('div',{staticClass:"mb-4 font-thin"},[_vm._v("A new version of this application is ready!")]),_c('span',{on:{"click":_vm.refresh}},[_c('kv-button',{attrs:{"text":"Update","color":"green","type":"button"}})],1),_c('span',{staticClass:"mt-2",on:{"click":_vm.dismiss}},[_c('kv-button',{attrs:{"text":"Dismiss","size":"small","color":"red","type":"button"}})],1)]):_vm._e()}
+var kvUpdateNoticevue_type_template_id_f6330f28_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/kvUpdateNotice.vue?vue&type=template&id=f6330f28&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvUpdateNotice.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var kvUpdateNoticevue_type_script_lang_js_ = ({
+  components: {
+    kvButton: kvButton
+  },
+  data: function data() {
+    return {
+      // Is the service worker refreshing?
+      refreshing: false,
+      // Is a new service worker registered?
+      registration: null,
+      // Does the application have an update ready?
+      update: false
+    };
+  },
+  methods: {
+    showUpdateNotice: function showUpdateNotice(event) {
+      this.registration = event.detail;
+      this.update = true;
+    },
+    refresh: function refresh() {
+      // Hide the update notice.
+      this.update = false; // If there is a new registration and it it waiting, we have to tell the service worker to skip waiting.
+
+      if (!this.registration || !this.registration.waiting) return;
+      this.registration.waiting.postMessage('skipWaiting');
+    },
+    dismiss: function dismiss() {
+      this.update = false;
+    }
+  },
+  created: function created() {
+    var _this = this;
+
+    // When this component is mounted we will listen for the custom event to be fired to show the update notice.
+    document.addEventListener('swUpdated', this.showUpdateNotice, {
+      once: true
+    }); // Add a controllerchange listener to the service worker to actually trigger a page refresh for new content.
+
+    navigator.serviceWorker.addEventListener('controllerchange', function () {
+      // Prevent triggering a refresh multiple times.
+      if (_this.refreshing) return;
+      _this.refreshing = true;
+      window.location.reload();
+    });
+  }
+});
+// CONCATENATED MODULE: ./src/components/kvUpdateNotice.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_kvUpdateNoticevue_type_script_lang_js_ = (kvUpdateNoticevue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/kvUpdateNotice.vue
+
+
+
+
+
+/* normalize component */
+
+var kvUpdateNotice_component = normalizeComponent(
+  components_kvUpdateNoticevue_type_script_lang_js_,
+  kvUpdateNoticevue_type_template_id_f6330f28_render,
+  kvUpdateNoticevue_type_template_id_f6330f28_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var kvUpdateNotice = (kvUpdateNotice_component.exports);
 // CONCATENATED MODULE: ./src/main.js
+
 
 
 
@@ -1677,6 +1776,7 @@ var kvLoader_component = normalizeComponent(
 /* concated harmony reexport kvLabeledInput */__webpack_require__.d(__webpack_exports__, "kvLabeledInput", function() { return kvLabeledInput; });
 /* concated harmony reexport kvHeading */__webpack_require__.d(__webpack_exports__, "kvHeading", function() { return kvHeading; });
 /* concated harmony reexport kvLoader */__webpack_require__.d(__webpack_exports__, "kvLoader", function() { return kvLoader; });
+/* concated harmony reexport kvUpdateNotice */__webpack_require__.d(__webpack_exports__, "kvUpdateNotice", function() { return kvUpdateNotice; });
 
 
 

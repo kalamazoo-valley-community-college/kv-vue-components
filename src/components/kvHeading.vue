@@ -1,14 +1,9 @@
 <template>
-    <component :is="type" :class="classes" class="font-bold">{{ text }}</component>
+    <component :is="type" :class="getFontSize" class="font-bold">{{ text }}</component>
 </template>
 
 <script>
     export default {
-        data() {
-            return {
-                classes: null,
-            }
-        },
         props: {
             type: {
                 type: String,
@@ -19,28 +14,26 @@
             },
             text: String,
         },
-        methods: {
-            getFontSize(type) {
-                if (type === 'h1') {
-                    return ['text-3xl'];
-                } else if (type === 'h2') {
-                    return ['text-2xl'];
-                } else if (type === 'h3') {
-                    return ['text-xl'];
-                } else if (type === 'h4') {
-                    return ['text-lg'];
-                } else if (type === 'h5') {
-                    return ['text-base'];
-                } else if (type === 'h6') {
-                    return ['text-sm'];
-                } else {
-                    // If no class type is specified, default to the base styling.
-                    return ['text-base'];
+        computed: {
+            getFontSize() {
+                switch (this.type) {
+                    case 'h1':
+                        return ['text-3xl'];
+                    case 'h2':
+                        return ['text-2xl'];
+                    case 'h3':
+                        return ['text-xl'];
+                    case 'h4':
+                        return ['text-lg'];
+                    case 'h5':
+                        return ['text-base'];
+                    case 'h6':
+                        return ['text-sm'];
+                    default:
+                        return ['text-base'];
+
                 }
             }
-        },
-        mounted() {
-            this.classes = this.getFontSize(this.type);
         }
     }
 </script>

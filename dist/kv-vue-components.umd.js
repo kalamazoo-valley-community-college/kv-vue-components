@@ -1527,12 +1527,12 @@ var kvLabeledInput_component = normalizeComponent(
 )
 
 /* harmony default export */ var kvLabeledInput = (kvLabeledInput_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47986298-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvHeading.vue?vue&type=template&id=22c2d770&
-var kvHeadingvue_type_template_id_22c2d770_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.type,{tag:"component",staticClass:"font-bold",class:_vm.classes},[_vm._v(_vm._s(_vm.text))])}
-var kvHeadingvue_type_template_id_22c2d770_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47986298-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvHeading.vue?vue&type=template&id=40513079&
+var kvHeadingvue_type_template_id_40513079_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.type,{tag:"component",staticClass:"font-bold",class:_vm.getFontSize},[_vm._v(_vm._s(_vm.text))])}
+var kvHeadingvue_type_template_id_40513079_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/kvHeading.vue?vue&type=template&id=22c2d770&
+// CONCATENATED MODULE: ./src/components/kvHeading.vue?vue&type=template&id=40513079&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvHeading.vue?vue&type=script&lang=js&
 
@@ -1541,11 +1541,6 @@ var kvHeadingvue_type_template_id_22c2d770_staticRenderFns = []
 //
 //
 /* harmony default export */ var kvHeadingvue_type_script_lang_js_ = ({
-  data: function data() {
-    return {
-      classes: null
-    };
-  },
   props: {
     type: {
       type: String,
@@ -1556,28 +1551,31 @@ var kvHeadingvue_type_template_id_22c2d770_staticRenderFns = []
     },
     text: String
   },
-  methods: {
-    getFontSize: function getFontSize(type) {
-      if (type === 'h1') {
-        return ['text-3xl'];
-      } else if (type === 'h2') {
-        return ['text-2xl'];
-      } else if (type === 'h3') {
-        return ['text-xl'];
-      } else if (type === 'h4') {
-        return ['text-lg'];
-      } else if (type === 'h5') {
-        return ['text-base'];
-      } else if (type === 'h6') {
-        return ['text-sm'];
-      } else {
-        // If no class type is specified, default to the base styling.
-        return ['text-base'];
+  computed: {
+    getFontSize: function getFontSize() {
+      switch (this.type) {
+        case 'h1':
+          return ['text-3xl'];
+
+        case 'h2':
+          return ['text-2xl'];
+
+        case 'h3':
+          return ['text-xl'];
+
+        case 'h4':
+          return ['text-lg'];
+
+        case 'h5':
+          return ['text-base'];
+
+        case 'h6':
+          return ['text-sm'];
+
+        default:
+          return ['text-base'];
       }
     }
-  },
-  mounted: function mounted() {
-    this.classes = this.getFontSize(this.type);
   }
 });
 // CONCATENATED MODULE: ./src/components/kvHeading.vue?vue&type=script&lang=js&
@@ -1592,8 +1590,8 @@ var kvHeadingvue_type_template_id_22c2d770_staticRenderFns = []
 
 var kvHeading_component = normalizeComponent(
   components_kvHeadingvue_type_script_lang_js_,
-  kvHeadingvue_type_template_id_22c2d770_render,
-  kvHeadingvue_type_template_id_22c2d770_staticRenderFns,
+  kvHeadingvue_type_template_id_40513079_render,
+  kvHeadingvue_type_template_id_40513079_staticRenderFns,
   false,
   null,
   null,

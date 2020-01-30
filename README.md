@@ -1,54 +1,18 @@
 # kv-vue-components
 
 ## Usage
-You need a valid SSH key associated with your account that has read access to this package.
-```
-npm install git+ssh://git@github.com:kalamazoo-valley-community-college/kv-vue-components.git#master
-```
 
-### Import the named component(s).
-``` vue
-// You can add multiple component imports this way.
-import { kvButton, kvLabeledInput } from 'kv-vue-components';
+### Installation
+```
+npm install git+https://github.com/kalamazoo-valley-community-college/kv-vue-components.git#master --save
 ```
 
-### Register the component(s) on your Vue instance.
-``` vue
-export default {
-  components: {
-    kvButton,
-    kvLabeledInput,
-  }
-}
-```
+### [View the Wiki for full documentation of Component Usage.](https://github.com/kalamazoo-valley-community-college/kv-vue-components/wiki/1.-General-Component-Usage)
 
-### Use the component within your template.
-``` vue
-<kv-button text="Something" />
-<kv-labeled-input type="text"id="something" label="Something" :required="false" />
-```
+### Modifying Components
+#### The library must be built before pushing! No sophisticated workflow has been established yet.
 
-#### Combined Example
-``` vue
-<template>
-  <kv-button text="Something" />
-  <kv-labeled-input type="text"id="something" label="Something" :required="false" />
-</template>
-
-<script>
-  // You can add multiple component imports this way.
-  import { kvButton, kvLabeledInput } from 'kv-vue-components';
-
-  export default {
-    components: {
-      kvButton,
-      kvLabeledInput,
-    }
-  }
-</script>
-```
-
-## Project setup
+## Project setup after cloning.
 ```
 npm install
 ```

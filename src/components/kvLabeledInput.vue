@@ -11,14 +11,14 @@
                :class="classes"
                :style="styling"
                :list="list_id"
-               v-model="local_model"
+               v-model="input"
                :required="required"
                @keyup="updateParentModel">
         <select v-if="type === 'select'"
                 :id="id" :name="id"
                 :class="classes"
                 :style="styling"
-                v-model="local_model"
+                v-model="input"
                 @change="updateParentModel">
             <!-- Allow a slot for options directly if this is a select input. -->
             <slot/>
@@ -42,13 +42,12 @@
             },
             id: String,
             model: null,
-            local_model: null,
             required: Boolean,
             list_id: String
         },
         watch: {
             model_state() {
-                this.local_model = this.model;
+                this.input = this.model;
             }
         },
         data() {

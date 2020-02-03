@@ -3,11 +3,13 @@ import kvLabeledInput from "./components/kvLabeledInput";
 import kvHeading from "./components/kvHeading";
 import kvLoader from "./components/kvLoader";
 import kvUpdateNotice from "./components/kvUpdateNotice";
+import kvSideHeader from "./components/kvSideHeader";
 
 export {
     kvButton,
     kvLabeledInput,
     kvHeading,
     kvLoader,
-    kvUpdateNotice
+    kvUpdateNotice,
+    kvSideHeader
 };

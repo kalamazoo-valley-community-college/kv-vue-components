@@ -46,8 +46,9 @@
             list_id: String
         },
         watch: {
-            model_state() {
-                this.input = this.model;
+            // Watch the model for changes from the parent to update the local input model value.
+            model(value) {
+                this.input = value;
             }
         },
         data() {

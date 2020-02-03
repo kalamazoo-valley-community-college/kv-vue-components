@@ -13,9 +13,6 @@
         <span @click="refresh">
             <kv-button text="Update" color="green" type="button"/>
         </span>
-        <span @click="dismiss" class="mt-2">
-            <kv-button text="Dismiss" size="small" color="red" type="button"/>
-        </span>
     </div>
 </template>
 
@@ -47,9 +44,6 @@
                 // If there is a new registration and it it waiting, we have to tell the service worker to skip waiting.
                 if (!this.registration || !this.registration.waiting) return;
                 this.registration.waiting.postMessage('skipWaiting');
-            },
-            dismiss() {
-                this.update = false;
             }
         },
         created() {

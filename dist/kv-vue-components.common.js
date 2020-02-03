@@ -1713,17 +1713,14 @@ var kvLoader_component = normalizeComponent(
 )
 
 /* harmony default export */ var kvLoader = (kvLoader_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0e678d75-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvUpdateNotice.vue?vue&type=template&id=f6330f28&
-var kvUpdateNoticevue_type_template_id_f6330f28_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.update)?_c('div',{staticClass:"fixed bottom-0 right-0\n     flex flex-col justify-center items-center\n     text-sm text-center\n     mr-4 mb-4 p-4\n     bg-white\n     z-50\n     w-40\n     shadow-md\n     rounded-lg"},[_c('div',{staticClass:"mb-4 font-thin"},[_vm._v("A new version of this application is ready!")]),_c('span',{on:{"click":_vm.refresh}},[_c('kv-button',{attrs:{"text":"Update","color":"green","type":"button"}})],1),_c('span',{staticClass:"mt-2",on:{"click":_vm.dismiss}},[_c('kv-button',{attrs:{"text":"Dismiss","size":"small","color":"red","type":"button"}})],1)]):_vm._e()}
-var kvUpdateNoticevue_type_template_id_f6330f28_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0e678d75-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvUpdateNotice.vue?vue&type=template&id=1fe84090&
+var kvUpdateNoticevue_type_template_id_1fe84090_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.update)?_c('div',{staticClass:"fixed bottom-0 right-0\n     flex flex-col justify-center items-center\n     text-sm text-center\n     mr-4 mb-4 p-4\n     bg-white\n     z-50\n     w-40\n     shadow-md\n     rounded-lg"},[_c('div',{staticClass:"mb-4 font-thin"},[_vm._v("A new version of this application is ready!")]),_c('span',{on:{"click":_vm.refresh}},[_c('kv-button',{attrs:{"text":"Update","color":"green","type":"button"}})],1)]):_vm._e()}
+var kvUpdateNoticevue_type_template_id_1fe84090_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/kvUpdateNotice.vue?vue&type=template&id=f6330f28&
+// CONCATENATED MODULE: ./src/components/kvUpdateNotice.vue?vue&type=template&id=1fe84090&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvUpdateNotice.vue?vue&type=script&lang=js&
-//
-//
-//
 //
 //
 //
@@ -1768,9 +1765,6 @@ var kvUpdateNoticevue_type_template_id_f6330f28_staticRenderFns = []
 
       if (!this.registration || !this.registration.waiting) return;
       this.registration.waiting.postMessage('skipWaiting');
-    },
-    dismiss: function dismiss() {
-      this.update = false;
     }
   },
   created: function created() {
@@ -1801,8 +1795,8 @@ var kvUpdateNoticevue_type_template_id_f6330f28_staticRenderFns = []
 
 var kvUpdateNotice_component = normalizeComponent(
   components_kvUpdateNoticevue_type_script_lang_js_,
-  kvUpdateNoticevue_type_template_id_f6330f28_render,
-  kvUpdateNoticevue_type_template_id_f6330f28_staticRenderFns,
+  kvUpdateNoticevue_type_template_id_1fe84090_render,
+  kvUpdateNoticevue_type_template_id_1fe84090_staticRenderFns,
   false,
   null,
   null,

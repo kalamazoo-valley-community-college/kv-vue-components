@@ -42,12 +42,13 @@
             },
             id: String,
             model: null,
+            local_model: null,
             required: Boolean,
             list_id: String
         },
-        computed: {
-            local_model() {
-                return this.model;
+        watch: {
+            model_state() {
+                this.local_model = this.model;
             }
         },
         data() {

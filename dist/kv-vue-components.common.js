@@ -1992,12 +1992,12 @@ var kvSideHeader_component = normalizeComponent(
 )
 
 /* harmony default export */ var kvSideHeader = (kvSideHeader_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0e678d75-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvSideContent.vue?vue&type=template&id=14c4a26f&
-var kvSideContentvue_type_template_id_14c4a26f_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"p-4 lg:ml-64",on:{"touchend":_vm.closeKvSideHeader}},[_vm._t("default")],2)}
-var kvSideContentvue_type_template_id_14c4a26f_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0e678d75-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvSideContent.vue?vue&type=template&id=72a54888&
+var kvSideContentvue_type_template_id_72a54888_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"p-4 lg:ml-64",on:{"touchstart":_vm.closeKvSideHeader}},[_vm._t("default")],2)}
+var kvSideContentvue_type_template_id_72a54888_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/kvSideContent.vue?vue&type=template&id=14c4a26f&
+// CONCATENATED MODULE: ./src/components/kvSideContent.vue?vue&type=template&id=72a54888&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvSideContent.vue?vue&type=script&lang=js&
 //
@@ -2026,8 +2026,8 @@ var kvSideContentvue_type_template_id_14c4a26f_staticRenderFns = []
 
 var kvSideContent_component = normalizeComponent(
   components_kvSideContentvue_type_script_lang_js_,
-  kvSideContentvue_type_template_id_14c4a26f_render,
-  kvSideContentvue_type_template_id_14c4a26f_staticRenderFns,
+  kvSideContentvue_type_template_id_72a54888_render,
+  kvSideContentvue_type_template_id_72a54888_staticRenderFns,
   false,
   null,
   null,

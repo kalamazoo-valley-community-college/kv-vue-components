@@ -1,5 +1,5 @@
 <template>
-    <div class="p-4 lg:ml-64" @touchend="closeKvSideHeader">
+    <div class="p-4 lg:ml-64" @touchstart="closeKvSideHeader">
         <slot/>
     </div>
 </template>

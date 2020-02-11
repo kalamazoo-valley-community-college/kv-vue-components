@@ -13,7 +13,8 @@
                :list="list_id"
                v-model="input"
                :required="required"
-               @keyup="updateParentModel">
+               @input="updateParentModel"
+               @paste="updateParentModel">
         <select v-if="type === 'select'"
                 :id="id" :name="id"
                 :class="classes"

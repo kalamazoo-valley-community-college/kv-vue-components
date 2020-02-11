@@ -3,12 +3,12 @@
         inline-flex flex-col justify-start items-center
         bg-gray-100
         z-20
-        shadow-md
+        shadow
         p-4
+        transition-all duration-300 ease-in-out
         overflow-auto
         w-64"
-            :style="header_visible ? header_styling : header_hidden_styling"
-            :class="{'header-hidden': !header_visible}">
+            :style="header_visible ? null : header_hidden_styling">
 
         <div class="w-full flex flex-col justify-center items-center mb-2">
             <svg version="1.1"
@@ -69,7 +69,7 @@
 
         <slot name="content"/>
 
-        <div class="fixed top-0 right-0 m-2
+        <div v-if="button" class="fixed top-0 right-0 m-2
                     flex justify-center items-center
                     text-lg
                     w-10 h-10
@@ -93,7 +93,8 @@
 <script>
     export default {
         props: {
-            name: String
+            name: String,
+            button: Boolean
         },
         data() {
             return {
@@ -103,11 +104,7 @@
                 header_visible: true,
                 x_down: null,
                 y_down: null,
-                header_styling: {
-                    transition: 'all 0.2s ease',
-                },
                 header_hidden_styling: {
-                    transition: 'all 0.2s ease',
                     left: '-16rem'
                 }
             }

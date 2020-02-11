@@ -9,7 +9,6 @@
         <input v-if="type === 'text' || type === 'search' || type === 'datalist'"
                :type="type" :id="id" :name="id"
                :class="classes"
-               :style="styling"
                :list="list_id"
                v-model="input"
                :required="required"
@@ -18,7 +17,6 @@
         <select v-if="type === 'select'"
                 :id="id" :name="id"
                 :class="classes"
-                :style="styling"
                 v-model="input"
                 @change="updateParentModel">
             <!-- Allow a slot for options directly if this is a select input. -->
@@ -67,11 +65,14 @@
                     'border-gray-500',
                     'hover:border-blue-700',
                     'focus:border-blue-700',
-                    'shadow',
+                    'shadow-sm',
                     'rounded',
                     'focus:shadow-outline',
                     'outline-none',
-                    'w-full'
+                    'w-full',
+                    'transition-all',
+                    'duration-300',
+                    'ease-in-out'
                 ],
                 styling: {
                     transition: 'all 0.25s ease'

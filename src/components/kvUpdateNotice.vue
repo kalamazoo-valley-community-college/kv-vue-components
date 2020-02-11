@@ -7,7 +7,8 @@
          bg-white
          z-50
          w-40
-         shadow-md
+         transition-all duration-300 ease-in-out
+         shadow
          rounded-lg">
         <div class="mb-4 font-thin">A new version of this application is ready!</div>
         <span @click="refresh">

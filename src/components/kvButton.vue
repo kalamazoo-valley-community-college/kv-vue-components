@@ -3,7 +3,8 @@
             class="leading-none
                     rounded
                     cursor-pointer
-                    shadow
+                    shadow-sm
+                    transition-all duration-300 ease-in-out
                     hover:shadow-outline focus:shadow-outline
                     font-medium"
             :style="styling"
@@ -28,7 +29,6 @@
         data() {
             return {
                 styling: {
-                    transition: 'all 0.25s ease',
                     textShadow: '0 0 0.125rem black'
                 }
             }

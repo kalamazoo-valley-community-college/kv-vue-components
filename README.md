@@ -7,7 +7,7 @@
 npm install git+https://github.com/kalamazoo-valley-community-college/kv-vue-components.git#master --save
 ```
 
-### [View the Wiki for full documentation of Component Usage.](https://github.com/kalamazoo-valley-community-college/kv-vue-components/wiki/1.-General-Component-Usage)
+### [View the Wiki for full documentation of Component Usage.](https://github.com/kalamazoo-valley-community-college/kv-vue-components/wiki)
 
 ### Modifying Components
 #### The library must be built before pushing! No sophisticated workflow has been established yet.

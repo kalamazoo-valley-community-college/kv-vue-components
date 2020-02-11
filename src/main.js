@@ -4,6 +4,7 @@ import kvHeading from "./components/kvHeading";
 import kvLoader from "./components/kvLoader";
 import kvUpdateNotice from "./components/kvUpdateNotice";
 import kvSideHeader from "./components/kvSideHeader";
+import kvSideContent from "./components/kvSideContent";
 
 export {
     kvButton,
@@ -11,5 +12,6 @@ export {
     kvHeading,
     kvLoader,
     kvUpdateNotice,
-    kvSideHeader
+    kvSideHeader,
+    kvSideContent
 };

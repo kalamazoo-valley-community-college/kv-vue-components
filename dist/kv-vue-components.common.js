@@ -1983,7 +1983,45 @@ var kvSideHeader_component = normalizeComponent(
 )
 
 /* harmony default export */ var kvSideHeader = (kvSideHeader_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0e678d75-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvSideContent.vue?vue&type=template&id=21c8e92f&
+var kvSideContentvue_type_template_id_21c8e92f_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"p-4 lg:ml-64"},[_vm._t("default")],2)}
+var kvSideContentvue_type_template_id_21c8e92f_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/kvSideContent.vue?vue&type=template&id=21c8e92f&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvSideContent.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var kvSideContentvue_type_script_lang_js_ = ({});
+// CONCATENATED MODULE: ./src/components/kvSideContent.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_kvSideContentvue_type_script_lang_js_ = (kvSideContentvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/kvSideContent.vue
+
+
+
+
+
+/* normalize component */
+
+var kvSideContent_component = normalizeComponent(
+  components_kvSideContentvue_type_script_lang_js_,
+  kvSideContentvue_type_template_id_21c8e92f_render,
+  kvSideContentvue_type_template_id_21c8e92f_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var kvSideContent = (kvSideContent_component.exports);
 // CONCATENATED MODULE: ./src/main.js
+
 
 
 
@@ -1998,6 +2036,7 @@ var kvSideHeader_component = normalizeComponent(
 /* concated harmony reexport kvLoader */__webpack_require__.d(__webpack_exports__, "kvLoader", function() { return kvLoader; });
 /* concated harmony reexport kvUpdateNotice */__webpack_require__.d(__webpack_exports__, "kvUpdateNotice", function() { return kvUpdateNotice; });
 /* concated harmony reexport kvSideHeader */__webpack_require__.d(__webpack_exports__, "kvSideHeader", function() { return kvSideHeader; });
+/* concated harmony reexport kvSideContent */__webpack_require__.d(__webpack_exports__, "kvSideContent", function() { return kvSideContent; });
 
 
 

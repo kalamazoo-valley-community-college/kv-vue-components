@@ -67,27 +67,7 @@
             <div class="text-blue-700 font-medium">{{ name }}</div>
         </div>
 
-        <slot name="content"/>
-
-        <div v-if="button" class="absolute top-0 m-4
-                    flex justify-center items-center
-                    text-lg
-                    w-10 h-10
-                    z-30
-                    rounded-full
-                    shadow
-                    cursor-pointer
-                    border border-gray-400
-                    bg-gray-100"
-             :class="{'text-white': header_visible, 'border-blue-800': header_visible, 'bg-blue-700': header_visible}"
-             :style="icon_styling"
-             @click="toggleHeaderVisibility"
-             aria-hidden="true"
-             title="Show or Hide the Site Header">
-
-            <slot name="icon"/>
-
-        </div>
+        <slot/>
     </header>
 </template>
 
@@ -107,9 +87,6 @@
                 y_down: null,
                 header_hidden_styling: {
                     left: '-16rem'
-                },
-                icon_styling: {
-                    right: '-1rem'
                 }
             }
         },
@@ -137,7 +114,7 @@
                 this.x_down = null;
                 this.y_down = null;
             },
-            toggleHeaderVisibility() {
+            toggle() {
                 this.header_visible = !this.header_visible;
             },
             hide() {
@@ -148,6 +125,11 @@
             // https://stackoverflow.com/questions/2264072/detect-a-finger-swipe-through-javascript-on-the-iphone-and-android
             document.addEventListener('touchstart', this.handleTouchStart, false);
             document.addEventListener('touchmove', this.handleTouchMove, false);
+
+            // Listen for the event to toggle the header when the user clicks a toggle button.
+            this.$root.$on('toggleKvSideHeader', () => {
+                this.toggle();
+            });
 
             // Listen for the event to close the header when the user touches content.
             this.$root.$on('closeKvSideHeader', () => {

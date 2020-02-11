@@ -136,11 +136,19 @@
             toggleHeaderVisibility() {
                 this.header_visible = !this.header_visible;
             },
+            hide() {
+                this.header_visible = false;
+            }
         },
         mounted() {
             // https://stackoverflow.com/questions/2264072/detect-a-finger-swipe-through-javascript-on-the-iphone-and-android
             document.addEventListener('touchstart', this.handleTouchStart, false);
             document.addEventListener('touchmove', this.handleTouchMove, false);
+
+            // Listen for the event to close the header when the user touches content.
+            this.$root.$on('closeKvSideHeader', () => {
+                this.hide();
+            });
         },
         beforeDestroy() {
             // Remove the touch event listeners before this component is destroyed.

@@ -69,7 +69,7 @@
 
         <slot name="content"/>
 
-        <div v-if="button" class="fixed top-0 right-0 m-2
+        <div v-if="button" class="fixed top-0 left-0 m-2
                     flex justify-center items-center
                     text-lg
                     w-10 h-10

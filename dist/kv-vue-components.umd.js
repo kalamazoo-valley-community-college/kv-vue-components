@@ -2030,12 +2030,12 @@ var kvSideContent_component = normalizeComponent(
 )
 
 /* harmony default export */ var kvSideContent = (kvSideContent_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0e678d75-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvSideToggle.vue?vue&type=template&id=7af2bc00&
-var kvSideTogglevue_type_template_id_7af2bc00_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"absolute top-0 m-4\n                flex justify-center items-center\n                text-lg\n                w-10 h-10\n                z-30\n                rounded-full\n                shadow\n                cursor-pointer\n                border border-gray-400\n                bg-gray-100",attrs:{"aria-hidden":"true","title":"Show or Hide the Site Header"},on:{"click":_vm.toggleKvSideHeader}},[_vm._t("default")],2)}
-var kvSideTogglevue_type_template_id_7af2bc00_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0e678d75-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvSideToggle.vue?vue&type=template&id=6a7a3e14&
+var kvSideTogglevue_type_template_id_6a7a3e14_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"absolute top-0 left-0 m-4\n                flex justify-center items-center\n                text-lg\n                w-10 h-10\n                z-30\n                rounded-full\n                shadow\n                cursor-pointer\n                border border-gray-400\n                bg-gray-100",attrs:{"aria-hidden":"true","title":"Show or Hide the Site Header"},on:{"click":_vm.toggleKvSideHeader}},[_vm._t("default")],2)}
+var kvSideTogglevue_type_template_id_6a7a3e14_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/kvSideToggle.vue?vue&type=template&id=7af2bc00&
+// CONCATENATED MODULE: ./src/components/kvSideToggle.vue?vue&type=template&id=6a7a3e14&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvSideToggle.vue?vue&type=script&lang=js&
 //
@@ -2076,8 +2076,8 @@ var kvSideTogglevue_type_template_id_7af2bc00_staticRenderFns = []
 
 var kvSideToggle_component = normalizeComponent(
   components_kvSideTogglevue_type_script_lang_js_,
-  kvSideTogglevue_type_template_id_7af2bc00_render,
-  kvSideTogglevue_type_template_id_7af2bc00_staticRenderFns,
+  kvSideTogglevue_type_template_id_6a7a3e14_render,
+  kvSideTogglevue_type_template_id_6a7a3e14_staticRenderFns,
   false,
   null,
   null,

@@ -2,7 +2,7 @@
     <header class="fixed top-0 left-0 bottom-0
         inline-flex flex-col justify-start items-center
         bg-gray-100
-        z-30
+        z-40
         shadow
         p-4
         transition-all duration-300 ease-in-out
@@ -69,17 +69,18 @@
 
         <slot name="content"/>
 
-        <div v-if="button" class="fixed top-0 left-0 m-2
+        <div v-if="button" class="absolute top-0 m-4
                     flex justify-center items-center
                     text-lg
                     w-10 h-10
-                    z-20
+                    z-30
                     rounded-full
                     shadow
                     cursor-pointer
                     border border-gray-400
                     bg-gray-100"
              :class="{'text-white': header_visible, 'border-blue-800': header_visible, 'bg-blue-700': header_visible}"
+             :style="icon_styling"
              @click="toggleHeaderVisibility"
              aria-hidden="true"
              title="Show or Hide the Site Header">
@@ -106,6 +107,9 @@
                 y_down: null,
                 header_hidden_styling: {
                     left: '-16rem'
+                },
+                icon_styling: {
+                    right: '-1rem'
                 }
             }
         },

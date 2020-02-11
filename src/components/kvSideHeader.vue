@@ -2,7 +2,7 @@
     <header class="fixed top-0 left-0 bottom-0
         inline-flex flex-col justify-start items-center
         bg-gray-100
-        z-20
+        z-30
         shadow
         p-4
         transition-all duration-300 ease-in-out
@@ -73,7 +73,7 @@
                     flex justify-center items-center
                     text-lg
                     w-10 h-10
-                    z-30
+                    z-20
                     rounded-full
                     shadow
                     cursor-pointer

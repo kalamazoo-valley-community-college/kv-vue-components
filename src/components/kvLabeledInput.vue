@@ -6,7 +6,7 @@
                text-gray-800
                text-xs font-thin
                pointer-events-none">{{ label }}</label>
-        <input v-if="type === 'text' || type === 'search' || type === 'datalist'"
+        <input v-if="['text', 'search', 'datalist', 'password'].includes(type)"
                :type="type" :id="id" :name="id"
                :class="classes"
                :list="list_id"
@@ -34,9 +34,10 @@
             label: String,
             type: {
                 type: String,
+                // TODO: show/hide button for password inputs
                 default: 'text',
                 validation: value => {
-                    return ['text', 'search', 'select', 'datalist'].includes(value);
+                    return ['text', 'search', 'select', 'datalist', 'password'].includes(value);
                 }
             },
             id: String,

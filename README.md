@@ -1,4 +1,5 @@
 # kv-vue-components
+**This component system is still in its infancy and is in no way finished.**
 
 ## Usage
 

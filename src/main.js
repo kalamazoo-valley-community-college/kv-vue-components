@@ -10,6 +10,7 @@ import kvAccentMark from "./components/Logos/kvAccentMark";
 import kvccLogo from "./components/Logos/kvccLogo";
 import kvLogo from "./components/Logos/kvLogo";
 import kvLogoStacked from "./components/Logos/kvLogoStacked";
+import kvSimplePagination from "./components/kvSimplePagination";
 
 export {
     kvButton,
@@ -23,5 +24,6 @@ export {
     kvAccentMark,
     kvccLogo,
     kvLogo,
-    kvLogoStacked
+    kvLogoStacked,
+    kvSimplePagination
 };

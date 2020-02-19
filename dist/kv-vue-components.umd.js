@@ -2419,7 +2419,81 @@ var kvLogoStacked_component = normalizeComponent(
 )
 
 /* harmony default export */ var kvLogoStacked = (kvLogoStacked_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0e678d75-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvSimplePagination.vue?vue&type=template&id=1daf93da&
+var kvSimplePaginationvue_type_template_id_1daf93da_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('span',{class:{'opacity-50 pointer-events-none': !_vm.hasPreviousPage},attrs:{"disabled":!_vm.hasPreviousPage},on:{"click":_vm.previousPage,"keypress":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.previousPage($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"space",32,$event.key,[" ","Spacebar"])){ return null; }return _vm.previousPage($event)}]}},[_c('kv-button',{attrs:{"type":"button","size":"small","text":"Previous Page"}})],1),_c('span',{staticClass:"ml-2",class:{'opacity-50 pointer-events-none': !_vm.hasNextPage},attrs:{"disabled":!_vm.hasNextPage},on:{"click":_vm.nextPage,"keypress":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.nextPage($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"space",32,$event.key,[" ","Spacebar"])){ return null; }return _vm.nextPage($event)}]}},[_c('kv-button',{attrs:{"type":"button","size":"small","text":"Next Page"}})],1)])}
+var kvSimplePaginationvue_type_template_id_1daf93da_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/kvSimplePagination.vue?vue&type=template&id=1daf93da&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvSimplePagination.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var kvSimplePaginationvue_type_script_lang_js_ = ({
+  components: {
+    kvButton: kvButton
+  },
+  props: {
+    hasPreviousPage: Boolean,
+    hasNextPage: Boolean
+  },
+  methods: {
+    // TODO: Window event handlers for left and right arrows.
+    previousPage: function previousPage() {
+      if (this.hasPreviousPage) {
+        this.$emit('previousPage');
+      }
+    },
+    nextPage: function nextPage() {
+      if (this.hasNextPage) {
+        this.$emit('nextPage');
+      }
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/kvSimplePagination.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_kvSimplePaginationvue_type_script_lang_js_ = (kvSimplePaginationvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/kvSimplePagination.vue
+
+
+
+
+
+/* normalize component */
+
+var kvSimplePagination_component = normalizeComponent(
+  components_kvSimplePaginationvue_type_script_lang_js_,
+  kvSimplePaginationvue_type_template_id_1daf93da_render,
+  kvSimplePaginationvue_type_template_id_1daf93da_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var kvSimplePagination = (kvSimplePagination_component.exports);
 // CONCATENATED MODULE: ./src/main.js
+
 
 
 
@@ -2446,6 +2520,7 @@ var kvLogoStacked_component = normalizeComponent(
 /* concated harmony reexport kvccLogo */__webpack_require__.d(__webpack_exports__, "kvccLogo", function() { return kvccLogo; });
 /* concated harmony reexport kvLogo */__webpack_require__.d(__webpack_exports__, "kvLogo", function() { return kvLogo; });
 /* concated harmony reexport kvLogoStacked */__webpack_require__.d(__webpack_exports__, "kvLogoStacked", function() { return kvLogoStacked; });
+/* concated harmony reexport kvSimplePagination */__webpack_require__.d(__webpack_exports__, "kvSimplePagination", function() { return kvSimplePagination; });
 
 
 

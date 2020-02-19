@@ -6,6 +6,10 @@ import kvUpdateNotice from "./components/kvUpdateNotice";
 import kvSideHeader from "./components/kvSideHeader";
 import kvSideContent from "./components/kvSideContent";
 import kvSideToggle from "./components/kvSideToggle";
+import kvAccentMark from "./components/Logos/kvAccentMark";
+import kvccLogo from "./components/Logos/kvccLogo";
+import kvLogo from "./components/Logos/kvLogo";
+import kvLogoStacked from "./components/Logos/kvLogoStacked";
 
 export {
     kvButton,
@@ -15,5 +19,9 @@ export {
     kvUpdateNotice,
     kvSideHeader,
     kvSideContent,
-    kvSideToggle
+    kvSideToggle,
+    kvAccentMark,
+    kvccLogo,
+    kvLogo,
+    kvLogoStacked
 };

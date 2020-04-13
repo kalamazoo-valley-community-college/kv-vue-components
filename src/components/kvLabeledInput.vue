@@ -22,13 +22,10 @@
             <!-- Allow a slot for options directly if this is a select input. -->
             <slot/>
         </select>
-        <!-- Allow a datalist slot if this is a datalist input. -->
-        <slot v-if="type === 'datalist'"/>
     </div>
 </template>
 
 <script>
-    // TODO: Datalist focus handling? When re-focusing do we null the value?
     export default {
         props: {
             label: String,
@@ -37,7 +34,7 @@
                 // TODO: show/hide button for password inputs
                 default: 'text',
                 validation: value => {
-                    return ['text', 'search', 'select', 'datalist', 'password'].includes(value);
+                    return ['text', 'search', 'select', 'password'].includes(value);
                 }
             },
             id: String,

@@ -1527,12 +1527,12 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var kvButton = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e6c623ae-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=template&id=1d3c4570&
-var kvLabeledInputvue_type_template_id_1d3c4570_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative"},[_c('label',{staticClass:"absolute top-0 left-0\n           mb-1 ml-3 mt-2\n           text-gray-800\n           text-xs font-thin\n           pointer-events-none",attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]),((_vm.type)==='checkbox'&&(['text', 'search', 'datalist', 'password'].includes(_vm.type)))?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id,"list":_vm.list_id,"required":_vm.required,"type":"checkbox"},domProps:{"checked":Array.isArray(_vm.input)?_vm._i(_vm.input,null)>-1:(_vm.input)},on:{"input":_vm.updateParentModel,"paste":_vm.updateParentModel,"change":function($event){var $$a=_vm.input,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.input=$$a.concat([$$v]))}else{$$i>-1&&(_vm.input=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.input=$$c}}}}):((_vm.type)==='radio'&&(['text', 'search', 'datalist', 'password'].includes(_vm.type)))?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id,"list":_vm.list_id,"required":_vm.required,"type":"radio"},domProps:{"checked":_vm._q(_vm.input,null)},on:{"input":_vm.updateParentModel,"paste":_vm.updateParentModel,"change":function($event){_vm.input=null}}}):(['text', 'search', 'datalist', 'password'].includes(_vm.type))?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id,"list":_vm.list_id,"required":_vm.required,"type":_vm.type},domProps:{"value":(_vm.input)},on:{"input":[function($event){if($event.target.composing){ return; }_vm.input=$event.target.value},_vm.updateParentModel],"paste":_vm.updateParentModel}}):_vm._e(),(_vm.type === 'select')?_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id},on:{"change":[function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.input=$event.target.multiple ? $$selectedVal : $$selectedVal[0]},_vm.updateParentModel]}},[_vm._t("default")],2):_vm._e(),(_vm.type === 'datalist')?_vm._t("default"):_vm._e()],2)}
-var kvLabeledInputvue_type_template_id_1d3c4570_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e6c623ae-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=template&id=635716ad&
+var kvLabeledInputvue_type_template_id_635716ad_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative"},[_c('label',{staticClass:"absolute top-0 left-0\n           mb-1 ml-3 mt-2\n           text-gray-800\n           text-xs font-thin\n           pointer-events-none",attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]),((_vm.type)==='checkbox'&&(['text', 'search', 'datalist', 'password'].includes(_vm.type)))?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id,"list":_vm.list_id,"required":_vm.required,"type":"checkbox"},domProps:{"checked":Array.isArray(_vm.input)?_vm._i(_vm.input,null)>-1:(_vm.input)},on:{"input":_vm.updateParentModel,"paste":_vm.updateParentModel,"change":function($event){var $$a=_vm.input,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.input=$$a.concat([$$v]))}else{$$i>-1&&(_vm.input=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.input=$$c}}}}):((_vm.type)==='radio'&&(['text', 'search', 'datalist', 'password'].includes(_vm.type)))?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id,"list":_vm.list_id,"required":_vm.required,"type":"radio"},domProps:{"checked":_vm._q(_vm.input,null)},on:{"input":_vm.updateParentModel,"paste":_vm.updateParentModel,"change":function($event){_vm.input=null}}}):(['text', 'search', 'datalist', 'password'].includes(_vm.type))?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id,"list":_vm.list_id,"required":_vm.required,"type":_vm.type},domProps:{"value":(_vm.input)},on:{"input":[function($event){if($event.target.composing){ return; }_vm.input=$event.target.value},_vm.updateParentModel],"paste":_vm.updateParentModel}}):_vm._e(),(_vm.type === 'select')?_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],class:_vm.classes,attrs:{"id":_vm.id,"name":_vm.id},on:{"change":[function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.input=$event.target.multiple ? $$selectedVal : $$selectedVal[0]},_vm.updateParentModel]}},[_vm._t("default")],2):_vm._e()])}
+var kvLabeledInputvue_type_template_id_635716ad_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=template&id=1d3c4570&
+// CONCATENATED MODULE: ./src/components/kvLabeledInput.vue?vue&type=template&id=635716ad&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/kvLabeledInput.vue?vue&type=script&lang=js&
 
@@ -1563,9 +1563,6 @@ var kvLabeledInputvue_type_template_id_1d3c4570_staticRenderFns = []
 //
 //
 //
-//
-//
-// TODO: Datalist focus handling? When re-focusing do we null the value?
 /* harmony default export */ var kvLabeledInputvue_type_script_lang_js_ = ({
   props: {
     label: String,
@@ -1574,7 +1571,7 @@ var kvLabeledInputvue_type_template_id_1d3c4570_staticRenderFns = []
       // TODO: show/hide button for password inputs
       default: 'text',
       validation: function validation(value) {
-        return ['text', 'search', 'select', 'datalist', 'password'].includes(value);
+        return ['text', 'search', 'select', 'password'].includes(value);
       }
     },
     id: String,
@@ -1615,8 +1612,8 @@ var kvLabeledInputvue_type_template_id_1d3c4570_staticRenderFns = []
 
 var kvLabeledInput_component = normalizeComponent(
   components_kvLabeledInputvue_type_script_lang_js_,
-  kvLabeledInputvue_type_template_id_1d3c4570_render,
-  kvLabeledInputvue_type_template_id_1d3c4570_staticRenderFns,
+  kvLabeledInputvue_type_template_id_635716ad_render,
+  kvLabeledInputvue_type_template_id_635716ad_staticRenderFns,
   false,
   null,
   null,
